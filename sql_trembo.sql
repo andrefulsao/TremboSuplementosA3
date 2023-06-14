@@ -43,11 +43,3 @@ create table Usuario(
     email varchar(100) not null unique,
     senha varchar(100) not null
 );
-
-select * from Categoria;
-select * from Produto;
-
-insert into Produto (id_produto, nome_produto, quantidade, valor, conteudo, porcao, valor_energetico, id_categoria) values (null, 'produto1', 10, 20.20, 'teste', '120g', '120kg', 1);
-
-drop table Produto;
-drop table Categoria;
