@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/produto.css">
+    <link rel="icon" href="./image/logo.png" type="image/x-icon"/>
+    <title>Produto</title>
+</head>
+
+<body>
+    <header>    
+        <div class="div-logo">
+            <span class="img-logo-header"></span>
+            <h1 class="img-logo-titulo">TremboSuplementos</h1>
+        </div>
+        <ul class="opcoes-menu">
+            <li><a href="./Inicio.html" class="opcoes-menu-item">Inicio</a></li>
+            <li><a href="./produto.html" class="opcoes-menu-item">Produtos</a></li>
+            <li><a href="./categoria.html" class="opcoes-menu-item">Categorias</a></li>
+        </ul>
+    </header>
+    <main class="principal">
+        <section class="principal-opcoes">
+
+            <a href="cadastroProduto.html" class="principal-opcoes-cadastrar" id="botao-cadastrar-produto">+ Produto</a>
+
+            <div class="principal-opcoes-buscar">
+                <label for="selecao" class="principal-opcoes-buscar-label">Filtrar por:</label>
+                <select id="selecao" name="selecao" class="padrao-select">
+                    <option value="todos">Todos</option>
+                    <option value="codigo">Codigo</option>
+                    <option value="nome">Nome</option>
+                </select>
+                <input type="search" placeholder="Informe os dados para busca" class="principal-opcoes-buscar-buscar" id="dadoBusca" />
+                <input type="button" value="Buscar" class="principal-opcoes-buscar-botao" id="botao-buscar"/>
+                <input type="button" value="Limpar" class="principal-opcoes-buscar-botao" id="botao-limpar"/>
+            </div>
+        </section>
+        <section class="principal-resultado" id="principal-resultado">
+            <div class="principal-resultado-label">
+                <p class="principal-resultado-label-codigo">codigo</p>
+                <p class="principal-resultado-label-nome">nome</p>
+            </div>
+            <div id="principal-resultado-teste">
+
+            </div>            
+        </section>
+
+    </main>
+    <script src="./app/buscarProduto.js"></script>
+</body>
+
+</html>

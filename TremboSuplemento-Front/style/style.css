@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap%27');
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --fonte-principal: "Poppins";
+    --fonte-secundaria: "Josefin Sans";
+    --preto: #000000;
+    --branco: #ffffff;
+    --azul: #002F52;
+    --cor-de-fundo-header: #ffffff;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;        
+}

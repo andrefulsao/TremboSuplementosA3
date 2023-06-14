@@ -1,0 +1,201 @@
+@import url(style.css);
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+header {
+    padding: 0.5em 0;
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    background-color: var(--cor-de-fundo-header);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div-logo {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.img-logo-titulo {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+}
+
+.img-logo-header {
+    width: 40px;
+    height: 40px;
+    background-image: url(../image/syringe-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.opcoes-menu {
+    display: flex;
+    gap: 1em;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.opcoes-menu-item {
+    text-decoration: none;
+    color: var(--preto);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Estilização de header acima */
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    width: 100vw;
+}
+
+.principal-opcoes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+}
+
+.principal-opcoes-cadastrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul);
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 6px 0px var(--preto);
+    transition: all .1s;
+}
+
+.principal-opcoes-cadastrar:active {
+    box-shadow: 0px 2px 0px var(--preto);
+    position: relative;
+    top: 2px;
+}
+
+.principal-opcoes-buscar {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    gap: 1em;
+}
+
+.principal-opcoes-buscar-buscar {
+    width: 300px;
+    background-color: var(--branco);
+    color: #242424;
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+    padding: .15rem .5rem;
+    min-height: 30px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid var(--preto);
+    line-height: 1.15;
+    box-shadow: 0px 10px 20px -18px;
+}
+
+.principal-opcoes-buscar-buscar:focus {
+    border-bottom: 2px solid var(--azul);
+    border-radius: 4px 4px 2px 2px;
+}
+
+.principal-opcoes-buscar-buscar:hover {
+    outline: 1px solid lightgrey;
+}
+
+.principal-opcoes-buscar-botao {
+    color: var(--branco);
+    font-size: 16px;
+    background-color: var(--azul);
+    border: 1px solid var(--preto);
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    box-shadow: 0px 6px 0px var(--preto);
+    transition: all .1s;
+}
+
+.principal-opcoes-buscar-botao:active {
+    box-shadow: 0px 2px 0px var(--preto);
+    position: relative;
+    top: 2px;
+}
+
+
+
+/* Estilo menu de opções */
+
+.principal-resultado {   
+    height: 100%;
+    width: 80%;
+    background-color: var(--branco);
+    border: 1px solid var(--azul);
+}
+
+.principal-resultado-descricao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    width: 100%;
+
+}
+
+.principal-resultado-descricao-descricao{
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.principal-resultado-checkbox {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.principal-resultado-checkbox-checkbox{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+
+.principal-titulo-texto {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    display: flex;
+    align-items: left;
+}
+
+.descricao{
+    font-size: 20px;
+    font-weight: 500;
+}
