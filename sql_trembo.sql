@@ -1,3 +1,4 @@
+CREATE DATABASE trembo;
 use trembo;
 
 create table Categoria(
